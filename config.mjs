@@ -26,8 +26,17 @@ const config = {
       : path.resolve(__dirname, "rspack-dist"),
     filename: "[name].js",
   },
+  module: {
+    rules: [
+      {
+        test: /\.(png|svg|jpg|jpeg|gif|pdf)$/,
+        type: "asset/resource",
+      },
+    ],
+  },
   experiments: {
     css: true,
+    lazyCompilation: true,
   },
 };
 

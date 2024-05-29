@@ -15,11 +15,16 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function render() {
-    const el = document.createElement('div')
-    el.classList.add('text')
-    document.getElementsByTagName('body')[0].appendChild(el)
-    el.innerHTML = 'hello, world'
+  const el = document.createElement("div");
+  el.classList.add("text");
+  document.getElementsByTagName("body")[0].appendChild(el);
+  el.innerHTML = "hello, world";
+
+  const imgEl = document.createElement("img");
+  imgEl.setAttribute("src", "https://picsum.photos/200");
+  document.getElementsByTagName("body")[0].appendChild(imgEl);
 }
+
 
 /***/ })
 
